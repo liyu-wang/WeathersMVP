@@ -16,6 +16,10 @@
 		01B1909D22425E9A00DF2405 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1909C22425E9A00DF2405 /* WeatherListViewController.swift */; };
 		01B1909F22425F8700DF2405 /* WeatherListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1909E22425F8700DF2405 /* WeatherListPresenter.swift */; };
 		01B190A122425FCD00DF2405 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B190A022425FCD00DF2405 /* Weather.swift */; };
+		01BDFFE322426A53003E167D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDFFE222426A53003E167D /* WeatherService.swift */; };
+		01BDFFE522426A66003E167D /* WeatherServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDFFE422426A66003E167D /* WeatherServiceImpl.swift */; };
+		01BDFFE722426AAD003E167D /* WeatherDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDFFE622426AAD003E167D /* WeatherDAO.swift */; };
+		01BDFFE922426ABE003E167D /* WeatherDAOImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDFFE822426ABE003E167D /* WeatherDAOImpl.swift */; };
 		1A19079DE44896F9C219D138 /* Pods_WeathersMVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D814775D3C7462C23DEAA610 /* Pods_WeathersMVPTests.framework */; };
 		586507463050D5FDF69996E5 /* Pods_WeathersMVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E2C5F65F1E8A0C7ADF08E1 /* Pods_WeathersMVPUITests.framework */; };
 		719E18212ACC564DC8554DA5 /* Pods_WeathersMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E245111CBA49DE5B904D4B79 /* Pods_WeathersMVP.framework */; };
@@ -54,6 +58,10 @@
 		01B1909C22425E9A00DF2405 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
 		01B1909E22425F8700DF2405 /* WeatherListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListPresenter.swift; sourceTree = "<group>"; };
 		01B190A022425FCD00DF2405 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		01BDFFE222426A53003E167D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		01BDFFE422426A66003E167D /* WeatherServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceImpl.swift; sourceTree = "<group>"; };
+		01BDFFE622426AAD003E167D /* WeatherDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDAO.swift; sourceTree = "<group>"; };
+		01BDFFE822426ABE003E167D /* WeatherDAOImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDAOImpl.swift; sourceTree = "<group>"; };
 		070D8A69CE766C57E28615E7 /* Pods-WeathersMVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeathersMVPTests.debug.xcconfig"; path = "Target Support Files/Pods-WeathersMVPTests/Pods-WeathersMVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42E2C5F65F1E8A0C7ADF08E1 /* Pods_WeathersMVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeathersMVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9D6C14F34F70DD1251DC2B /* Pods-WeathersMVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeathersMVPUITests.debug.xcconfig"; path = "Target Support Files/Pods-WeathersMVPUITests/Pods-WeathersMVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +185,8 @@
 		01B1909A22425BAA00DF2405 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				01BDFFE222426A53003E167D /* WeatherService.swift */,
+				01BDFFE422426A66003E167D /* WeatherServiceImpl.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 		01B1909B22425BB400DF2405 /* DAOs */ = {
 			isa = PBXGroup;
 			children = (
+				01BDFFE622426AAD003E167D /* WeatherDAO.swift */,
+				01BDFFE822426ABE003E167D /* WeatherDAOImpl.swift */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -464,8 +476,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BDFFE322426A53003E167D /* WeatherService.swift in Sources */,
 				01B190A122425FCD00DF2405 /* Weather.swift in Sources */,
+				01BDFFE522426A66003E167D /* WeatherServiceImpl.swift in Sources */,
 				01B1909D22425E9A00DF2405 /* WeatherListViewController.swift in Sources */,
+				01BDFFE722426AAD003E167D /* WeatherDAO.swift in Sources */,
+				01BDFFE922426ABE003E167D /* WeatherDAOImpl.swift in Sources */,
 				01B1906A2242578100DF2405 /* AppDelegate.swift in Sources */,
 				01B1909F22425F8700DF2405 /* WeatherListPresenter.swift in Sources */,
 			);

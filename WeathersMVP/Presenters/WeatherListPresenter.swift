@@ -9,5 +9,9 @@
 import Foundation
 
 class WeatherListPresenter {
+    unowned let view: WeatherListView
     
+    init(with weatherListView: WeatherListView) {
+        self.view = weatherListView
+    }
 }

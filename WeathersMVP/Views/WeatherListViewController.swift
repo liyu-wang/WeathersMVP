@@ -8,8 +8,11 @@
 
 import UIKit
 
-protocol WeatherListView {
-    
+protocol WeatherListView: AnyObject {
+    func attachView(_ view: WeatherListView)
+    func setIsLoading(flag: Bool)
+    func setHasLoaded(flag: Bool)
+    func setWeathers(_ weathers: [Weather])
 }
 
 class WeatherListViewController: UIViewController {
@@ -42,7 +45,8 @@ extension WeatherListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath)
+        return cell
     }
     
 }
