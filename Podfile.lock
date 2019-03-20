@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 40959e38d49fd786c7ee3058e4b71aa1c13ede7e
+PODS:
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
+
+DEPENDENCIES:
+  - RealmSwift (~> 3.11)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
+
+PODFILE CHECKSUM: 956efb8f48d88f7489bd37d75f9c2808d805ba83
 
 COCOAPODS: 1.6.0

@@ -117,6 +117,8 @@
 				01B19097224257D400DF2405 /* Models */,
 				01B19098224257E200DF2405 /* Views */,
 				01B19099224257E800DF2405 /* Presenters */,
+				01B1909A22425BAA00DF2405 /* Services */,
+				01B1909B22425BB400DF2405 /* DAOs */,
 				01B190692242578100DF2405 /* AppDelegate.swift */,
 				01B1906B2242578100DF2405 /* ViewController.swift */,
 				01B1906D2242578100DF2405 /* Main.storyboard */,
@@ -166,6 +168,20 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
+		01B1909A22425BAA00DF2405 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01B1909B22425BB400DF2405 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
 		4FFCBB1D3EB375FB60240680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +202,6 @@
 				5B9D6C14F34F70DD1251DC2B /* Pods-WeathersMVPUITests.debug.xcconfig */,
 				C294094D46F7ED6EAB902839 /* Pods-WeathersMVPUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,6 +216,7 @@
 				01B190622242578100DF2405 /* Sources */,
 				01B190632242578100DF2405 /* Frameworks */,
 				01B190642242578100DF2405 /* Resources */,
+				817F1C11224386A56F878873 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +235,7 @@
 				01B190762242578200DF2405 /* Sources */,
 				01B190772242578200DF2405 /* Frameworks */,
 				01B190782242578200DF2405 /* Resources */,
+				64A6B4B7DD64D19C68462050 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +359,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		64A6B4B7DD64D19C68462050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeathersMVPTests/Pods-WeathersMVPTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeathersMVPTests/Pods-WeathersMVPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		68E78F56DCABB69B0F8623A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +403,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817F1C11224386A56F878873 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeathersMVP/Pods-WeathersMVP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeathersMVP/Pods-WeathersMVP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E761C844C3D98CAA52A00A6E /* [CP] Check Pods Manifest.lock */ = {
